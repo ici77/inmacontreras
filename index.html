@@ -21,7 +21,7 @@
             font-size: 18px;
         }
         .container {
-            max-width: 700px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -37,9 +37,14 @@
             padding: 12px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 200px;
+            flex: 1 1 250px; /* Tamaño uniforme */
+            min-height: 350px; /* Mantiene el mismo alto */
+            max-width: 300px; /* Limita el ancho */
             text-align: center;
             transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .project:hover {
             transform: scale(1.05);
@@ -47,6 +52,8 @@
         .project img {
             width: 100%;
             border-radius: 10px;
+            max-height: 150px; /* Evita imágenes demasiado grandes */
+            object-fit: cover;
         }
         .project h3 {
             font-size: 16px;
@@ -56,13 +63,14 @@
         .project p {
             font-size: 12px;
             color: #555;
-            margin-bottom: 10px;
+            flex-grow: 1;
+            padding: 0 10px;
         }
         .project a {
             text-decoration: none;
             color: white;
             background: #3498db;
-            padding: 6px 10px;
+            padding: 8px 10px;
             border-radius: 5px;
             display: inline-block;
             font-size: 12px;
@@ -94,24 +102,22 @@
         <h2>📌 Proyectos Destacados</h2>
         <div class="projects">
             <div class="project">
-                <!-- Imagen enlazada al proyecto en GitHub -->
                 <a href="https://github.com/ici77/dardos" target="_blank">
-                    <img src="https://raw.githubusercontent.com/ici77/inmacontreras/main/dardos.png" alt="Proyecto Android Studio">
+                    <img src="https://raw.githubusercontent.com/ici77/inmacontreras/main/dardos.png" alt="Simulación Juego de Dardos">
                 </a>
                 <h3>Simulación del Juego de Dardos 501 en Java con Sockets</h3>
-                <p>juego de dardos 501 utilizando Java y programación en red con sockets y desarrollando aplicaciones cliente-servidor.</p>
+                <p>Juego de dardos 501 utilizando Java y programación en red con sockets y desarrollando aplicaciones cliente-servidor.</p>
                 <a href="https://github.com/ici77/dardos" target="_blank">🔗 Ver en GitHub</a>
             </div>
-            <div class="projects">
-                <div class="project">
-                    <!-- Imagen enlazada al proyecto en GitHub -->
-                    <a href="https://github.com/ici77/multiplicando" target="_blank">
-                        <img src="https://raw.githubusercontent.com/ici77/inmacontreras/main/multiplicando.jpg" alt="Proyecto Android Studio">
-                    </a>
-                    <h3>Proyecto Android Studio</h3>
-                    <p>Juego infantil para practicar las tablas de multiplicar de una forma divertida y motivadora.</p>
-                    <a href="https://github.com/ici77/multiplicando" target="_blank">🔗 Ver en GitHub</a>
-                </div>
+
+            <div class="project">
+                <a href="https://github.com/ici77/multiplicando" target="_blank">
+                    <img src="https://raw.githubusercontent.com/ici77/inmacontreras/main/multiplicando.jpg" alt="Proyecto Android Studio">
+                </a>
+                <h3>Proyecto Android Studio</h3>
+                <p>Juego infantil para practicar las tablas de multiplicar de una forma divertida y motivadora.</p>
+                <a href="https://github.com/ici77/multiplicando" target="_blank">🔗 Ver en GitHub</a>
+            </div>
         </div>
     </div>
 
