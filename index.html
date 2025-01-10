@@ -21,7 +21,7 @@
             font-size: 18px;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -34,12 +34,12 @@
         }
         .project {
             background: white;
-            padding: 12px;
+            padding: 15px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            flex: 1 1 250px; /* Tamaño uniforme */
-            min-height: 350px; /* Mantiene el mismo alto */
-            max-width: 300px; /* Limita el ancho */
+            flex: 1 1 220px; /* Ajuste para hacerlos más estrechos */
+            min-height: 500px; /* Aumentamos la altura para hacerlo más vertical */
+            max-width: 260px; /* Limita el ancho */
             text-align: center;
             transition: transform 0.3s ease-in-out;
             display: flex;
@@ -52,7 +52,7 @@
         .project img {
             width: 100%;
             border-radius: 10px;
-            max-height: 150px; /* Evita imágenes demasiado grandes */
+            max-height: 180px; /* Ajustamos la altura máxima de las imágenes */
             object-fit: cover;
         }
         .project h3 {
@@ -70,10 +70,10 @@
             text-decoration: none;
             color: white;
             background: #3498db;
-            padding: 8px 10px;
+            padding: 10px;
             border-radius: 5px;
             display: inline-block;
-            font-size: 12px;
+            font-size: 14px;
         }
         .project a:hover {
             background: #217dbb;
@@ -117,6 +117,24 @@
                 <h3>Proyecto Android Studio</h3>
                 <p>Juego infantil para practicar las tablas de multiplicar de una forma divertida y motivadora.</p>
                 <a href="https://github.com/ici77/multiplicando" target="_blank">🔗 Ver en GitHub</a>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/ici77/profesorado" target="_blank">
+                    <img src="https://raw.githubusercontent.com/ici77/inmacontreras/main/profesorado.png" alt="Gestión del Profesorado">
+                </a>
+                <h3>Gestión del Profesorado - JavaFX & XML</h3>
+                <p>📂 Aplicación en JavaFX para gestionar profesores con datos en XML. Interfaz intuitiva con JavaFXML, permite carga y edición de datos.</p>
+                <a href="https://github.com/ici77/profesorado" target="_blank">🔗 Ver en GitHub</a>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/ici77/biblioteca" target="_blank">
+                    <img src="https://raw.githubusercontent.com/ici77/inmacontreras/main/biblioteca.png" alt="Gestión de Biblioteca">
+                </a>
+                <h3>Gestión de Biblioteca - JavaFX & SQL</h3>
+                <p>📚 Aplicación en JavaFX para gestionar préstamos de libros, registrar, modificar y consultar datos de biblioteca con SQL.</p>
+                <a href="https://github.com/ici77/biblioteca" target="_blank">🔗 Ver en GitHub</a>
             </div>
         </div>
     </div>
